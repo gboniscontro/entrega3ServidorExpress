@@ -12,7 +12,7 @@ class Contenedor {
         this.name = name
         try {
 
-            this.productos = fs.readFileSync(name, 'utf-8')
+            this.productos = fs.appendFileSync(name,'', 'utf-8')
             this.productos = JSON.parse(this.productos)
             console.log('archivo leido')
 
