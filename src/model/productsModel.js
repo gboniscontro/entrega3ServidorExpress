@@ -1,4 +1,4 @@
-[
+ const productos = [
   {
     "title": "Titulo 1",
     "price": 150,
@@ -18,3 +18,4 @@
     "id": 3
   }
 ]
+module.exports = {productos}
