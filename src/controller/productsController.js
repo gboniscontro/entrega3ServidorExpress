@@ -9,6 +9,7 @@ module.exports={
     },
     getById:(request, response) =>{
         try {
+             let id = request.params.id
             for (let i = 0; i < productos.length; i++)
                 if (productos[i].id == id)
                    return response.status(200).json(productos[i])
